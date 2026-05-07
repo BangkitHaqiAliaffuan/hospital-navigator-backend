@@ -69,6 +69,7 @@ app.get('/', (req, res) => {
       health: `${config.apiPrefix}/health`,
       rooms: `${config.apiPrefix}/rooms`,
       qrAnchors: `${config.apiPrefix}/qr-anchors`,
+      categories: `${config.apiPrefix}/categories`,
     },
   });
 });

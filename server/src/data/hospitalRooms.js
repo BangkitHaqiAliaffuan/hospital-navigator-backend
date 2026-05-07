@@ -4,6 +4,8 @@
  * Synchronized with frontend hospitalRoomInfo.ts
  */
 
+import { validateCategory } from './categories.js';
+
 export const hospitalRooms = {
   IGD: {
     id: "IGD",
@@ -663,6 +665,12 @@ export const upsertRoom = (roomData) => {
   
   if (!id || !name || !category) {
     throw new Error('Room must have id, name, and category');
+  }
+
+  // Validate category exists in CATEGORIES table
+  const categoryValidation = validateCategory(category);
+  if (!categoryValidation.valid) {
+    throw new Error(categoryValidation.error);
   }
 
   hospitalRooms[id] = {

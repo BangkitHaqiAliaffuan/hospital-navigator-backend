@@ -1,6 +1,7 @@
 import express from 'express';
 import roomsRouter from './rooms.js';
 import qrAnchorsRouter from './qrAnchors.js';
+import categoriesRouter from './categories.js';
 
 const router = express.Router();
 
@@ -16,5 +17,6 @@ router.get('/health', (req, res) => {
 // API routes
 router.use('/rooms', roomsRouter);
 router.use('/qr-anchors', qrAnchorsRouter);
+router.use('/categories', categoriesRouter);
 
 export default router;
