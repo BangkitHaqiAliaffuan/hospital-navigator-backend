@@ -198,15 +198,6 @@ export const qrAnchors = {
     label: "Belok ke Jalan Atas",
     floor: 2,
   },
-  "QR-F2-N08": {
-    qrId: "QR-F2-N08",
-    roomId: "R._HRD___Kepegawaian",
-    svgX: 653.031,
-    svgY: 255.344,
-    label: "Persimpangan Jalan Atas R. HRD & Kepegawaian",
-    floor: 2,
-    routeNodeId: "Persimpangan_Jalan_Atas_R._HRD___Kepegawaian",
-  },
   "QR-F2-N09": {
     qrId: "QR-F2-N09",
     roomId: "R._Meeting",
